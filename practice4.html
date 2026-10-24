@@ -1,0 +1,64 @@
+<body>
+    <div id = "root"></div>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type = "text/babel">//changed from javascript to babel
+        const rootElement = document.getElementById("root")
+        const children = "Hello World"
+        const className = "container"
+        const element = <div className = {className}>{children}</div>
+        ReactDOM.render(element,rootElement)
+        //const rootElement = document.getElementById("root")
+        //const element = document.createElement("div")
+        //element.textContent = "Hi there!"
+        //element.className = "container"
+        //rootElement.appendChild(element)
+    </script>
+</body>
+
+
+
+<body>
+    <div id = "root1"></div>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type = "text/babel">//changed from javascript to babel
+        const rootElement1 = document.getElementById("root1")
+        const children1 = "Hello World"
+        const className1 = "container"
+        const element1 = 
+            <div className = {className1}>
+                <span>Hello</span> <strong>World</strong>
+            </div>
+        ReactDOM.render(element1,rootElement1)
+        //const rootElement = document.getElementById("root")
+        //const element = document.createElement("div")
+        //element.textContent = "Hi there!"
+        //element.className = "container"
+        //rootElement.appendChild(element)
+    </script>
+</body>
+
+
+<body>
+    <div id = "root2"></div>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type = "text/babel">//changed from javascript to babel
+        const rootElement2 = document.getElementById("root2")
+        const children2 = "Hello World"
+        const className2 = "container"
+        const props = {children2 , className2}
+        const element2 = <div {...props}/>
+                
+        ReactDOM.render(element2,rootElement2)
+        //const rootElement = document.getElementById("root")
+        //const element = document.createElement("div")
+        //element.textContent = "Hi there!"
+        //element.className = "container"
+        //rootElement.appendChild(element)
+    </script>
+</body>
