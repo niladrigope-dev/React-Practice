@@ -1,0 +1,26 @@
+<body>
+    <div id = "root"></div>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type = "text/babel">//changed from javascript to babel
+        
+        const helloElement = React.createElement("span", null, "hello") //null for no props
+        const worldElement = React.createElement("strong", null, "World")
+        const element = React.createElement(
+            React.Fragment,
+            null,
+            helloElement,
+            worldElement,
+        )
+        ReactDOM.render(element,document.getElementById("root"))
+        //const rootElement = document.getElementById("root")
+        //const element = document.createElement("div")
+        //element.textContent = "Hi there!"
+        //element.className = "container"
+        //rootElement.appendChild(element)
+    </script>
+</body>
+
+
+
