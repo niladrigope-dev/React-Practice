@@ -5,7 +5,12 @@
   <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
   <script type="text/babel">
     function CharacterCount({text}) {
-      return null
+       
+      return (
+        <div>
+            The text "{text}" has  {text.length ? <strong>{text.length}</strong> : "No" } characters
+        </div>
+      )
     }
 
     const element = (
